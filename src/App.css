@@ -1,0 +1,56 @@
+.todoCard{
+    border: 1px solid black;
+    margin: 10px 20px;
+    padding:0px 14px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 20px;
+}
+h3{
+    font-size: 20px;
+    
+}
+.todo-item-container{
+   
+    height: 600px;
+    overflow-y: scroll;
+}
+.todo-add-container{
+    position: fixed;
+    bottom: 0;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 5px black;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+.input-todo{
+    width: 380px;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+.btn-todo{
+     width: 100px;
+     padding: 5px 10px;
+     background-color: rgb(37, 222, 197);
+     color: black;
+     border-radius: 10px;
+     cursor: pointer;
+}
+.delete-img{
+    height: 20px;
+    width: 20px;
+}
+.edit-img{
+    height: 20px;
+    width: 20px;
+    margin: 0px 20px;
+}
