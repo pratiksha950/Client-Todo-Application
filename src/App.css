@@ -1,3 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FACE68;
+    margin: 0;
+    padding: 0;
+}
 .todoCard{
     border: 1px solid black;
     margin: 10px 20px;
@@ -11,6 +17,9 @@
 }
 h1{
     font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 h3{
     font-size: 20px;
@@ -26,10 +35,10 @@ h3{
     bottom: 0;
     padding: 10px 20px;
     box-shadow: 0 -2px 5px black;
-    width: 100%;
-    background-color: aqua;
+    width: 47%;
+    background-color: #FF937E;
     display: flex;
-    justify-content: center;
+    
 }
 .input-todo{
     width: 380px;
@@ -40,10 +49,13 @@ h3{
 .btn-todo{
      width: 100px;
      padding: 5px 10px;
-     background-color: rgb(37, 222, 197);
+     background-color: #3291B6;
      color: black;
      border-radius: 10px;
      cursor: pointer;
+     color:white;
+     font-weight: bolder;
+     font-size: 15px;
 }
 .delete-img{
     height: 20px;
@@ -53,4 +65,27 @@ h3{
     height: 20px;
     width: 20px;
     margin: 0px 20px;
+}
+.todo-item-container{
+    border: 2px solid gray;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    background-color:#FA6868;
+    height: 650px;
+}
+.title{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 30px;
+}
+.sub-title{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 20px;
 }

@@ -21,19 +21,19 @@ function App() {
     console.log("response",response.data.data);
     setTodos(response.data.data);}
 
-    const addTodo=async()=>{
-      const response=await axios.post(`${Base_Url}`,{
-        todoItem:newtodo
+    const addTodo = async () => {
+      await axios.post(`${Base_Url}todos`, {
+        todoItem: newtodo
       });
       setNewtodo("");
       loadTodos();
-    }
+    };
 
     const editTodo=async()=>{
-      const response=await axios.put(`${Base_Url}`,{
-        oldItem:oldtodo,
-        newItem:newtodo
-      });+
+    axios.put(`${Base_Url}todos`, {
+      oldItem: oldtodo,
+      newItem: newtodo
+    });
       loadTodos();
       setEditmode(false);
       setNewtodo(""); 
@@ -53,8 +53,8 @@ function App() {
   return (
 
     <div className='todo-item-container'>
-      <h1>TOdO list</h1>
-      <p>
+      <h1 className='title'>Todo App</h1>
+      <p className='sub-title'>
         {editmode ? "Edit your todo item" : "Your todo items are listed below"}
       </p>
     <div>
