@@ -11,7 +11,7 @@ function App() {
   const [oldtodo,setOldtodo]=useState("");
   const [editmode,setEditmode]=useState(false);
 
-  const Base_Url="http://localhost:8081/todos";
+  const Base_Url="https://client-server-todo-application.onrender.com/";
 
     const loadTodos=async()=>{
     console.log("loading todos");
