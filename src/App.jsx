@@ -11,7 +11,8 @@ function App() {
   const [oldtodo,setOldtodo]=useState("");
   const [editmode,setEditmode]=useState(false);
 
-  const Base_Url=import.meta.env.VITE_BASE_URL;
+const Base_Url = import.meta.env.VITE_API_URL;
+
 
     const loadTodos=async()=>{
     console.log("loading todos");
