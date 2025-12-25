@@ -17,12 +17,12 @@ function App() {
     console.log("loading todos");
      
    
-    const response=await axios.get(`${Base_Url}todos`);
+    const response=await axios.get(`${Base_Url}/todos`);
     console.log("response",response.data.data);
     setTodos(response.data.data);}
 
     const addTodo = async () => {
-      await axios.post(`${Base_Url}todos`, {
+      await axios.post(`${Base_Url}/todos`, {
         todoItem: newtodo
       });
       setNewtodo("");
@@ -30,7 +30,7 @@ function App() {
     };
 
     const editTodo=async()=>{
-    axios.put(`${Base_Url}todos`, {
+    axios.put(`${Base_Url}/todos`, {
       oldItem: oldtodo,
       newItem: newtodo
     });
@@ -41,7 +41,7 @@ function App() {
     }
 
     const deleteTodo=async(todoItem)=>{
-      const response=await axios.delete("http://localhost:8081/todos",{
+      const response=await axios.delete(`${Base_Url}/todos`,{
         data:{todoItem:todoItem},
       });
       loadTodos();
