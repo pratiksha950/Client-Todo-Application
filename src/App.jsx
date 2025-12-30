@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import "./App.css"
 import axios from 'axios';
-import bin from "../src/bin.png"
-import edit from "../src/edit.png"
-import img from "../src/todo.png"
+import bin from "./bin.png"
+import edit from "./edit.png"
+
 
 
 function App() {
